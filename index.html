@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error Handling</title>
+    <link rel="stylesheet" href="./main.css" />
+    <script src="errorHandlers.js"></script>
+    <script src="app.js"></script>
+    <script src="handleFormSubmit.js"></script>
+  </head>
+  <body>
+    <form onsubmit="event.preventDefault(); handleFormSubmit();">
+      <label for="numerator">Numerator:</label>
+      <input type="text" id="numerator" name="numerator" /><br /><br />
+      <label for="denominator">Denominator:</label>
+      <input type="text" id="denominator" name="denominator" /><br /><br />
+      <input type="submit" value="Submit" />
+      <div id="error-message"></div>
+      <div id="result"></div>
+    </form>
+  </body>
+</html>
